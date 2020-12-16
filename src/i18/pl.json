@@ -1,0 +1,20 @@
+{
+  "header": {
+    "section1": {
+        "title": "Ubezpieczenia"
+      },
+    "section2": {
+      "title": "Inwestycje"
+    },
+    "section3": {
+      "title": "Emerytura"
+    },
+    "section4": {
+      "title": "Szkody i zdarzenia"
+    },
+    "section5": {
+      "title": "Kontakt i pomoc"
+    }
+  }
+  }
+

@@ -1,0 +1,38 @@
+.nav {
+    /*background-color: var(--off-white);*/
+    /*background-color: #333;*/
+    /*background-color: black;*/
+    position: sticky;
+    text-align: center;
+    top: 0px;
+    font-size: 18px;
+    color:#9f8240;
+    
+    /*width: 100%;
+    
+    z-index: 1000;*/
+    box-shadow: 0 4px 14px 0 rgba(1, 1, 0, 0.15);
+}
+
+
+.nav-link {
+    text-align: center;
+    display: inline;
+    margin-left: 2rem;
+    color: #9f8240
+}
+
+.nav-item {
+    color: #9f8240;
+    text-align: center;
+
+}
+
+.nav-item > .msactive {
+    border-bottom: 4px solid #9f8240;
+    color: #9f8240
+}
+
+.navbar {
+    height: '100px';
+}

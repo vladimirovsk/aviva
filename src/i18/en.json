@@ -1,0 +1,23 @@
+{
+  "header": {
+    "section1": {
+      "title": "HOME"
+    },
+    "section2": {
+      "title": "ABOUT"
+    },
+    "section3": {
+      "title": "SERVICES"
+    },
+    "section4": {
+      "title": "AREA OF PRACTICE"
+    },
+    "section5": {
+      "title": "TEAM"
+    },
+    "section6": {
+      "title": "CONTACTS"
+    }
+  }
+}
+
