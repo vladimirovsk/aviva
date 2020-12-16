@@ -1,44 +1,59 @@
 
 .home{
-    background: #F5F5F5;
+    background: #9f8240;/* #F5F5F5;*/
     font-family: "Playfair Display", Sans-serif;
-    height: 400px;
-    
+    padding: 0px;
+    color: #ffffff
     /*top: 55px;
     z-index: -1000;
     position: sticky;*/
 }
-.img_title {
-   /* margin-top: 100px;
+.img_Owner {
+    /*margin-top: 100px;
     max-width: 100%;
     height: auto;*/
-    height: 400px;
+    height: 25vh;
     left: 0;
     margin: 0;
     padding: 0;
 }
 
-.titleLogotip{
-    margin-top: 50px;
-    font-family:  'Merienda One', cursive, Sans-serif;
-    color:#9f8240;
-    text-align: center;
-
-    transform: translate(0px, 200%);
-    opacity: 1;
-    transition: all 1.8s easy 0s;
+.cardHome:hover{
+    transition: '0.3s';
+    box-shadow: '0px 14px 80px rgba(34, 35, 58, 0.2)';  
 }
 
-.titleLogotip._active{
-    transform:translate(0px, 0px);
-    opacity: 1;
-    transition: all 1.8s easy 1s;
+.cardHome {
+    width: 18rem;
+    margin-top:-10vh;
+
+    padding: 0vh;
+
+    transition: '0.3s';
+    box-shadow: '0px 14px 80px rgba(34, 35, 58, 0.2)';
+    border-radius: 16px; 
+    /*position: 'relative',
+    //maxWidth: 500,
+    //marginLeft: 'auto',
+    //overflow: 'initial',
+    //background: theme.palette.primary, //'#ffffff',
+    //display: 'flex',
+    //flexDirection: 'column',
+    //alignItems: 'left',
+    //paddingBottom: 100,
+    //marginTop: theme.spacing(4)*/
+
 }
 
-.titleContact{
-    font-family:  'Roboto', sans-serif;
-    color:#9f8240;
-    text-align: center;
+
+.card_action_home{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 16px;
+    
 }
+
+
 
 

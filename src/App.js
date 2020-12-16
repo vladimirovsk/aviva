@@ -4,6 +4,7 @@ import {Container} from 'react-bootstrap';
 
 import Header from './component/Header/Header'
 import Home from './component/Home/Home'
+import Title from './component/Title/Title'
 
 import {translate, setTranslations, setDefaultLanguage, setLanguageCookie} from 'react-switch-lang'
 import * as PropTypes from "prop-types";
@@ -19,8 +20,9 @@ setLanguageCookie();
 
 function App() {
   return (
-    <Container fluid="lg">
+    <Container>
         <Header />
+        <Title id='title'/>
         <Home id='home' />
         <Investition id='investition' />
         <Kontact id='kontact' />

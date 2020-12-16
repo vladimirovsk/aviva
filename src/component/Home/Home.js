@@ -1,73 +1,58 @@
 import React from "react"
 import "./Home.css"
 import {translate} from "react-switch-lang";
-import {Col, Container, Row} from "react-bootstrap";
-import { Link} from "react-scroll";
+import {Col, Container, Row, Button} from "react-bootstrap";
+import {Card, CardActions, Typography, CardContent, CardActionArea, CardMedia} from '@material-ui/core'
+import dummyText from '../../DummyText'
+
 
 //import HD from "./headers.jpg"
-import leftImg from '../../img/leftImg.gif'
+import leftImg from '../../img/Owner.jpg'
 
 
-const Home = (props) => { 
-
-React.useEffect(() => {
-        const animItems = document.querySelectorAll('.titleLogotip');
-       
-        //console.log('OFFSET', window.innerHeight)
-        if (animItems.length>0){
-            window.addEventListener('scroll', animOnScroll);
-
-            function animOnScroll(){
-                //console.log('animOnScroll', animItems);
-                for (let index = 0; index < animItems.length; index++){
-                    const animItem = animItems[index];
-                    const animItemHeight = animItem.offsetHeight;
-                    const animItemOffset = offset(animItem).top;          
-                    const animStart = 5;
-
-                    let animItemPoint = window.innerHeight - animItemHeight / animStart;
-                    
-                    if (animItemHeight > window.innerHeight){
-                        console.log(animItemHeight, window.innerHeight);
-                        animItemPoint =  window.innerHeight - window.innerHeight / animStart;
-                    }
-                    console.log(window.pageYOffset, ">",animItemOffset-animItemPoint);
-                    if ((window.pageYOffset > animItemOffset - animItemPoint) && (window.pageYOffset < (animItemOffset+ animItemHeight))){
-                       animItem.classList.add('_active'); 
-                    }else
-                    {
-                        animItem.classList.remove('_active'); 
-                    }
-                }
-            }
-
-            setTimeout(()=>{
-                animOnScroll();
-            }, 1000)
-        }
-    }, []);
-
-    function offset(el){
-        const rect = el.getBoundingClientRect(),
-            scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-            scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        return {top: rect.top + scrollTop, left: rect.left + scrollLeft}
-    }
-    
+const Home = (props) => {   
     const [{t}] = React.useState(props) 
         return (
-            <Container fluid={true} className={"home"}>
+            <Container className={"home"}>
+           
                 <Row>
-                <Col>
-                    <img className="img_title" src={leftImg} alt=""/>
-                </Col>
-                <Col>
-                    <h1 className='titleLogotip'>Luxury Insurance</h1>
-                    <h4 className='titleContact'><Link className='titleContact' href="tel:+48600328158">+48 600 328 158</Link></h4>
-                    <h4 className='titleContact'><Link className='titleContact' href="mailto:konktakt@luxuryinsurance.pl">konktakt@luxuryinsurance.pl</Link></h4>
-                </Col>
+                    <Col xs="8" className='mt-5' style={{textAlign:'justify'}}>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Id nibh tortor id aliquet. Sed lectus vestibulum mattis ullamcorper 
+                        velit sed. Nec nam aliquam sem et tortor. Elit eget gravida cum sociis 
+                        natoque. Ipsum a arcu cursus vitae. Massa sapien faucibus et molestie ac 
+                        feugiat sed. Turpis egestas maecenas pharetra convallis posuere morbi leo. 
+                        uis at consectetur lorem donec massa sapien faucibus et molestie. 
+                        Purus sit amet luctus venenatis lectus. Pellentesque nec nam aliquam sem et tortor consequat id porta. 
+                        Sapien et ligula ullamcorper malesuada. Fringilla ut morbi tincidunt augue interdum velit euismod.
+                         Vitae turpis massa sed elementum tempus egestas sed. Netus et malesuada fames ac turpis egestas integer eget aliquet. 
+                         Blandit cursus risus at ultrices mi tempus imperdiet nulla malesuada. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis.
+                        Nisi est sit amet facilisis.     
+                    </Col>
+                    <Col xs="4">
+                        <Card className='cardHome'>
+                        <CardActionArea>
+                            <CardMedia 
+                                component='img'
+                                alt="Owner"
+                                height='400px'
+                                image={leftImg}
+                                title="Owner"
+                                />
+                                 <CardContent>
+                                 <Typography style={{textAlign: 'center', fontFamily:  "'Dancing Script', cursive", fontSize: '2.5em'}}>
+                                    Patryk Janicki
+                                 </Typography> 
+                                 <Typography variant="body2" color="textSecondary" component="p">
+                                    Owner Luxury Insurance
+                                </Typography>   
+                                 </CardContent>
+                            </CardActionArea>
+                        </Card>
+                    </Col >
                 </Row>
-                       
+    
             </Container>
 
         )

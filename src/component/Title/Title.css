@@ -1,0 +1,53 @@
+
+.title {
+    background: #F5F5F5;
+    font-family: "Playfair Display", Sans-serif;
+    margin: 0px;
+    padding: 0px;
+   
+    
+    /*top: 55px;
+     height: 400px;
+    z-index: -1000;
+    position: sticky;
+    padding: 5vh;*/
+}
+.img_title {
+   /* margin-top: 100px;
+    max-width: 100%;
+    height: auto;*/
+    height: 400px;
+    left: 0;
+    margin: 0;
+    padding-top: 50px;
+}
+
+.titleLogotip._animate {
+    margin-top: 50px ;
+    font-family:  'Merienda One', cursive, Sans-serif;
+    color:#9f8240;
+    text-align: center;
+
+    transform: translate(0px, 200%);
+    opacity: 0;
+    transition: all 0.8s easy 0s;
+}
+.titleLogotip._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 0.8s easy 0s;
+}
+
+.titleContact._animate{
+    font-family:  'Roboto', sans-serif;
+    color:#fff;
+    text-align: right;
+
+}
+
+._Email {
+    font-family:  'Roboto', sans-serif;
+    color:#9f8240;
+    text-align: right;
+}
+
