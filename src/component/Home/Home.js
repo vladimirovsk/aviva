@@ -1,8 +1,8 @@
 import React from "react"
 import "./Home.css"
 import {translate} from "react-switch-lang";
-import {Col, Container, Row, Button} from "react-bootstrap";
-import {Card, CardActions, Typography, CardContent, CardActionArea, CardMedia} from '@material-ui/core'
+import {Col, Container, Row} from "react-bootstrap";
+import {Card, Typography, CardContent, CardActionArea, CardMedia} from '@material-ui/core'
 import dummyText from '../../DummyText'
 
 
@@ -30,27 +30,7 @@ const Home = (props) => {
                          Blandit cursus risus at ultrices mi tempus imperdiet nulla malesuada. Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis.
                         Nisi est sit amet facilisis.     
                     </Col>
-                    <Col xs="4">
-                        <Card className='cardHome'>
-                        <CardActionArea>
-                            <CardMedia 
-                                component='img'
-                                alt="Owner"
-                                height='400px'
-                                image={leftImg}
-                                title="Owner"
-                                />
-                                 <CardContent>
-                                 <Typography style={{textAlign: 'center', fontFamily:  "'Dancing Script', cursive", fontSize: '2.5em'}}>
-                                    Patryk Janicki
-                                 </Typography> 
-                                 <Typography variant="body2" color="textSecondary" component="p">
-                                    Owner Luxury Insurance
-                                </Typography>   
-                                 </CardContent>
-                            </CardActionArea>
-                        </Card>
-                    </Col >
+                    
                 </Row>
     
             </Container>

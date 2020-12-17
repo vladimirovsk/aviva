@@ -1,7 +1,7 @@
 import React from "react"
 import "./Title.css"
 import {translate} from "react-switch-lang";
-import {Col, Container, Row, Jumbotron} from "react-bootstrap";
+import {Col, Container, Row} from "react-bootstrap";
 
 
 //import HD from "./headers.jpg"
@@ -56,7 +56,7 @@ React.useEffect(() => {
     const [{t}] = React.useState(props) 
         return (
            
-            <Container className={"title"}>
+            <Container fluid='md' className={"title"}>
                 <Row>
                 <Col lg='8' fluid={'sm'}>
                     <img className="img_title" src={leftImg} alt=""/>

@@ -11,7 +11,7 @@ import * as PropTypes from "prop-types";
 import en from './i18/en.json';
 import pl from './i18/pl.json';
 import Kontact from './component/Kontact/Kontact';
-import Investition from './component/Investition/Investition';
+import Investition from './component/Kierunok/Kierunek';
 
 
 setTranslations({en, pl });
@@ -20,7 +20,8 @@ setLanguageCookie();
 
 function App() {
   return (
-    <Container>
+    <Container fluid={'md'}
+    >
         <Header />
         <Title id='title'/>
         <Home id='home' />

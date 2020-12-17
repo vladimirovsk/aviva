@@ -5,7 +5,7 @@ import {Navbar, Nav, Form} from 'react-bootstrap';
 import {getLanguage, setLanguage, translate} from "react-switch-lang";
 import "./Header.css"
 import Logo from '../../img/Logotip.gif';
-import {Switch , FormControlLabel, FormGroup} from '@material-ui/core';
+import {Switch , FormControlLabel, FormGroup, Container} from '@material-ui/core';
 
 
 const IOSSwitch  = withStyles((theme)=>({
@@ -59,6 +59,7 @@ const handleClickLang = (event) =>{
     const [{t}] = React.useState(props);
 
     return(
+    
             <Navbar className='navbar' fixed="top" expand="sm" sticky="top" style={{backgroundColor:'#F5F5F5'}}>
             <Navbar.Brand href="#home">
             <img
@@ -81,6 +82,7 @@ const handleClickLang = (event) =>{
                         spy={true}
                         smooth={true}
                         offset={-70}
+                        
                         duration={500}
                     >
                     {t('header.section1.title')}
@@ -157,7 +159,6 @@ const handleClickLang = (event) =>{
                 </Navbar.Collapse>
                 
             </Navbar>
-
     )
 } 
 export default translate(Header);
